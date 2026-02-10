@@ -27,38 +27,25 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 glass-header">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link to="/" className="flex items-center gap-5 group relative z-50 transition-all hover:scale-[1.02] active:scale-[0.98]">
-          <div className="relative">
-            {/* Animated aura */}
-            <div className="absolute -inset-3 bg-cyan-500/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-
-            {/* The Icon: Crystal Fragment */}
-            <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-[1.5rem] border border-white/30 bg-white/5 backdrop-blur-2xl shadow-2xl skew-x-[-10deg] transition-all duration-500 group-hover:skew-x-0 group-hover:bg-white/10">
-              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-transparent" />
-              <svg className="h-7 w-7 text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.8)]" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 14c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
-              </svg>
-            </div>
+        {/* Modern Cinematic Logo */}
+        <Link to="/" className="flex items-center gap-3 group relative z-50 transition-all hover:opacity-90 active:scale-95">
+          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 shadow-lg shadow-cyan-400/20 group-hover:shadow-cyan-400/40 transition-all group-hover:scale-110">
+            <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl" />
+            <svg className="h-5 w-5 text-white ml-0.5 drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7 6v12l10-6z" />
+            </svg>
           </div>
 
-          <div className="flex flex-col">
-            <div className="flex items-center gap-2">
-              <span className="font-display text-3xl font-light tracking-[0.1em] text-white/90 group-hover:text-white transition-colors">
-                leak
-              </span>
-              <div className="h-8 w-[1px] bg-white/10 origin-bottom scale-y-75 group-hover:scale-y-100 transition-transform duration-500" />
-              <span className="font-sans text-3xl font-black uppercase tracking-tighter italic bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]">
-                porno
-              </span>
-            </div>
-            <div className="relative h-[2px] w-full mt-1 bg-white/5 overflow-hidden">
-              <div className="absolute inset-0 bg-cyan-400/50 -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
-              <div className="absolute right-0 bottom-[-10px] pr-1">
-                <span className="font-sans text-[9px] font-black uppercase tracking-[0.5em] text-cyan-500/60 group-hover:text-cyan-400 transition-colors">
+          <div className="flex flex-col -space-y-1">
+            <div className="flex items-center">
+              <span className="font-display text-2xl md:text-3xl font-black tracking-tighter text-white">
+                leak<span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent uppercase font-black italic">porno</span>
+                <span className="ml-1 px-1.5 py-0.5 rounded bg-cyan-500 text-[10px] font-black uppercase tracking-widest text-white shadow-[0_0_15px_rgba(34,211,238,0.4)]">
                   fr
                 </span>
-              </div>
+              </span>
             </div>
+            <div className="h-[2px] w-0 group-hover:w-full bg-cyan-400 transition-all duration-300" />
           </div>
         </Link>
 
