@@ -28,14 +28,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 glass-header">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Modern Cinematic Logo */}
-        <Link to="/" className="flex items-center gap-3 group relative z-50 transition-all hover:opacity-90 active:scale-95">
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 shadow-lg shadow-cyan-400/20 group-hover:shadow-cyan-400/40 transition-all group-hover:scale-110">
-            <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl" />
-            <svg className="h-5 w-5 text-white ml-0.5 drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M7 6v12l10-6z" />
-            </svg>
-          </div>
-
+        <Link to="/" className="flex items-center group relative z-50 transition-all hover:opacity-90 active:scale-95">
           <div className="flex flex-col -space-y-1">
             <div className="flex items-center">
               <span className="font-display text-2xl md:text-3xl font-black tracking-tighter text-white">
